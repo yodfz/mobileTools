@@ -1,0 +1,15 @@
+{
+  "name": "移动端运营工具库",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window":{
+    "title":"移动端运营工具库",
+//    "toolbar":false,
+    "position":"center",
+    "frame":"false",
+    "resizable":"false",
+    "height":500,
+    "width":1000
+//    "fullscreen":true
+  }
+}
