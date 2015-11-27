@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.html",
   "window":{
-    "title":"移动端运营工具库",
+    "title":"运营的工具箱",
 //    "toolbar":false,
     "position":"center",
     "frame":"false",
