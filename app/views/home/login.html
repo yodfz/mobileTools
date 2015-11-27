@@ -1,0 +1,85 @@
+<!-- Page background -->
+<div id="page-signin-bg">
+    <!-- Background overlay -->
+    <div class="overlay"></div>
+    <!-- Replace this with your bg image -->
+    <img src="assets/demo/signin-bg-8.jpg" alt="">
+</div>
+<!-- / Page background -->
+<!-- Container -->
+<div class="signin-container" style="-webkit-animation:fadeInDown 1.5s ease-in-out;">
+    <!-- Left side -->
+    <div class="signin-info">
+        <a href="index.html" class="logo">
+            <img src="assets/demo/logo-big.png" alt="" style="margin-top: -5px;">&nbsp;
+            系统管理
+        </a> <!-- / .logo -->
+        <div class="slogan">
+            <!--Simple. Flexible. Powerful.-->
+        </div> <!-- / .slogan -->
+        <ul>
+        </ul> <!-- / Info list -->
+    </div>
+    <!-- / Left side -->
+
+    <!-- Right side -->
+    <div class="signin-form">
+
+        <!-- Form -->
+        <form action="index.html" id="signin-form_id">
+            <div class="signin-text">
+                <span>登陆管理员账号</span>
+            </div> <!-- / .signin-text -->
+
+            <div class="form-group w-icon" ng-class="{'has-error':error.phone}">
+                <input  type="text" ng-model="user.phone" name="phone" id="phone" class="form-control input-lg" placeholder="账号">
+                <span class="fa fa-user signin-form-icon"></span>
+            </div> <!-- / Username -->
+
+            <div class="form-group w-icon" ng-class="{'has-error':error.phone}">
+                <input type="password" ng-model="user.pass" name="pass" id="pass" class="form-control input-lg" placeholder="密码">
+                <span class="fa fa-lock signin-form-icon"></span>
+            </div> <!-- / Password -->
+            <div class="form-actions text-right">
+                <div ng-if="!isLogin"><input ng-click="login()" type="button" value="登陆"  class="signin-btn bg-primary"></div>
+                <div ng-if="isLogin" class="text-center"><i class="icon2 icon-spin4 icon-animation-rotate"></i>登陆中...</div>
+                <!--<a href="#" class="forgot-password" id="forgot-password-link">Forgot your password?</a>-->
+            </div> <!-- / .form-actions -->
+        </form>
+        <!-- / Form -->
+
+        <!-- "Sign In with" block -->
+        <div class="signin-with">
+
+            <!-- Facebook -->
+            <!--<a href="index.html" class="signin-with-btn" style="background:#4f6faa;background:rgba(79, 111, 170, .8);">Sign In with <span>Facebook</span></a>-->
+        </div>
+        <!-- / "Sign In with" block -->
+
+        <!-- Password reset form -->
+        <div class="password-reset-form" id="password-reset-form">
+            <div class="header">
+                <div class="signin-text">
+                    <span>Password reset</span>
+                    <div class="close">&times;</div>
+                </div> <!-- / .signin-text -->
+            </div> <!-- / .header -->
+
+            <!-- Form -->
+            <form action="index.html" id="password-reset-form_id">
+                <div class="form-group w-icon">
+                    <input type="text" name="password_reset_email" id="p_email_id" class="form-control input-lg" placeholder="Enter your email">
+                    <span class="fa fa-envelope signin-form-icon"></span>
+                </div> <!-- / Email -->
+
+                <div class="form-actions">
+                    <input type="submit" value="SEND PASSWORD RESET LINK" class="signin-btn bg-primary">
+                </div> <!-- / .form-actions -->
+            </form>
+            <!-- / Form -->
+        </div>
+        <!-- / Password reset form -->
+    </div>
+    <!-- Right side -->
+</div>
+<!-- / Container -->

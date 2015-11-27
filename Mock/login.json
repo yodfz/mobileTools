@@ -1,0 +1,14 @@
+{
+  "errorCode":200,
+  "error":"",
+  "data":{
+    "id":1,
+    "loginame":"admin",
+    "nick":"昵称",
+    "phone":"1888888888",
+    "type":1,
+    "image":"",
+    "createdAt":"",
+    "updatedAt":""
+  }
+}

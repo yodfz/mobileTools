@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('font/save.eot');
+  src: url('font/save.eot?#iefix') format('embedded-opentype'), url('font/save.woff') format('woff'), url('font/save.ttf') format('truetype'), url('font/save.svg#iconfont') format('svg');
+}
+.icon2 {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  font-size: 1em;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-trash-1:before {
+  content: '\30';
+}
+.icon-sun:before {
+  content: '\e800';
+}
+.icon-trash:before {
+  content: '\e801';
+}
+.icon-tags:before {
+  content: '\e802';
+}
+.icon-floppy:before {
+  content: '\e803';
+}
+.icon-cog:before {
+  content: '\e804';
+}
+.icon-tag:before {
+  content: '\e805';
+}
+.icon-doc-text:before {
+  content: '\e806';
+}
+.icon-tag-1:before {
+  content: '\e807';
+}
+.icon-cancel:before {
+  content: '\e808';
+}
+.icon-cancel-outline:before {
+  content: '\e809';
+}
+.icon-cancel-1:before {
+  content: '\e80a';
+}
+.icon-cancel-2:before {
+  content: '\e80b';
+}
+.icon-ellipsis:before {
+  content: '\e80c';
+}
+.icon-ok-4:before {
+  content: '\e80d';
+}
+.icon-ok-1:before {
+  content: '\e80e';
+}
+.icon-angle-left:before {
+  content: '\e80f';
+}
+.icon-angle-right:before {
+  content: '\e810';
+}
+.icon-angle-up:before {
+  content: '\e811';
+}
+.icon-angle-down:before {
+  content: '\e812';
+}
+.icon-calendar:before {
+  content: '\e813';
+}
+.icon-ok-2:before {
+  content: '\e814';
+}
+.icon-ok-3:before {
+  content: '\e815';
+}
+.icon-spin4:before {
+  content: '\e816';
+}
+.icon-spin3:before {
+  content: '\e817';
+}
+.icon-spin2:before {
+  content: '\e818';
+}
+.icon-spin1:before {
+  content: '\e819';
+}
+.icon-plus:before {
+  content: '\e81a';
+}
+.icon-plus-1:before {
+  content: '\e81b';
+}
+.icon-plus-squared-alt:before {
+  content: '\e81c';
+}
+.icon-plus-squared:before {
+  content: '\e81d';
+}
+.icon-plus-circled:before {
+  content: '\e81e';
+}
+.icon-plus-circled-1:before {
+  content: '\e81f';
+}
+.icon-plus-squared-1:before {
+  content: '\e820';
+}
+.icon-cancel-circled:before {
+  content: '\e821';
+}
+.icon-cancel-squared:before {
+  content: '\e822';
+}
+.icon-minus-circled:before {
+  content: '\e823';
+}
+.icon-minus-squared:before {
+  content: '\e824';
+}
+.icon-help:before {
+  content: '\e825';
+}
+.icon-help-circled:before {
+  content: '\e826';
+}
+.icon-info:before {
+  content: '\e827';
+}
+.icon-info-circled:before {
+  content: '\e828';
+}
+.icon-cog-1:before {
+  content: '\e829';
+}
+.icon-wrench:before {
+  content: '\e82a';
+}
+.icon-heart:before {
+  content: '\e82b';
+}
+.icon-heart-empty:before {
+  content: '\e82c';
+}
+.icon-basket:before {
+  content: '\e82d';
+}
+.icon-basket-1:before {
+  content: '\e82e';
+}
+.icon-scj:before {
+  content: '\e82f';
+}
+.icon-apple:before {
+  content: '\e830';
+}
+.icon-brush:before {
+  content: '\e831';
+}
+.icon-header:before {
+  content: '\e832';
+}
+.icon-paragraph:before {
+  content: '\e833';
+}
+.icon-picture:before {
+  content: '\e834';
+}
+.icon-basket-2:before {
+  content: '\e835';
+}
+.icon-building-filled:before {
+  content: '\e836';
+}
+.icon-heart2-empty:before {
+  content: '\e837';
+}
+.icon-heart2:before {
+  content: '\e838';
+}
+.icon-dropflow {
+  border: 7px solid red;
+  width: 0px;
+  height: 0px;
+  border-color: red transparent transparent transparent;
+  background-color: #fff;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform-origin: 50% 25%;
+      -ms-transform-origin: 50% 25%;
+          transform-origin: 50% 25%;
+  cursor: pointer;
+}
+@-webkit-keyframes icon-key-animation-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes identifier {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes identifier {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.icon-animation-rotate {
+  -webkit-animation: icon-key-animation-rotate 1.5s infinite linear;
+  animation: icon-key-animation-rotate 1.5s infinite linear;
+}
+.icon-dropdown {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.icon-animation-heart {
+  -webkit-animation: icon-heart-switch infinite linear;
+  animation: icon-heart-switch infinite linear;
+}
+@-webkit-keyframes icon-heart-switch {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+@keyframes icon-heart-switch {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+/*# sourceMappingURL=icon.css.map */
