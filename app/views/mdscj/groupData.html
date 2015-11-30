@@ -1,0 +1,50 @@
+<div class="page-header">
+    <h1><span class="text-light-gray">团购 / </span>团购H5</h1>
+</div>
+<div class="panel colourable">
+    <div class="panel-heading">
+        <span class="panel-title">&nbsp;</span>
+        <ul class="nav nav-tabs nav-tabs-xs">
+            <li ng-class="{'active':vm.tabIndex==1}">
+                <a  data-toggle="tab" ng-click="tab(1);">原始数据</a>
+            </li>
+            <li ng-class="{'active':vm.tabIndex==2}">
+                <a  data-toggle="tab" ng-click="tab(2);">预览</a>
+            </li>
+            <li ng-class="{'active':vm.tabIndex==3}">
+                <a  data-toggle="tab" ng-click="tab(3);">导入导出</a>
+            </li>
+        </ul> <!-- / .nav -->
+    </div> <!-- / .panel-heading -->
+    <div class="panel-body" ng-if="vm.tabIndex==1">
+        <!--/*0是小标题 1是店标 2是商品*/-->
+        <button class="btn btn-info" ng-click="add(0)">添加店标</button>
+        <button class="btn btn-info" ng-click="add(1)">添加Banner</button>
+        <button class="btn btn-info" ng-click="add(2)">添加商品</button>
+        <div>
+
+        </div>
+    </div>
+    <div class="panel-body" ng-if="vm.tabIndex==2">
+
+    </div>
+    <div class="panel-body" ng-if="vm.tabIndex==3">
+        <button class="btn btn-info btn-sm" style="margin: 0 0 20px 0;">复制数据</button>
+        <textarea name="" class="form-control" id="" cols="30" rows="10">{{vm.data}}</textarea>
+    </div>
+</div>
+<!--<ul class="nav nav-tabs nav-tabs-simple">-->
+    <!--<li class="">-->
+        <!--<a href="#" data-toggle="tab">Home</a>-->
+    <!--</li>-->
+    <!--&lt;!&ndash;<li class="active">&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#" data-toggle="tab">Profile <span class="badge badge-info">12</span></a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li class="dropdown">&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a href="#" data-toggle="tab">@fat</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li><a href="#" data-toggle="tab">@mdo</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li> &lt;!&ndash; / .dropdown &ndash;&gt;&ndash;&gt;-->
+<!--</ul>-->
