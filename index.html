@@ -24,6 +24,7 @@
     <script src="assets/javascripts/ie.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="style/icon.css">
+    <link rel="stylesheet" href="style/default.css">
     <style>
         *{
             /*font-weight: 100;*/
@@ -141,4 +142,14 @@
 <script src="app/controllers/mdscjgroupDataCtrl.js"></script>
 <script src="app/controllers/mdscjarticleForNavCtrl.js"></script>
 
+
+<script>
+    var nw={};
+//    nw.watch = require("node-watch");
+    nw.gui = require("nw.gui");
+    nw.fs = require("fs");
+//    nw.osenv = require("osenv");
+    nw.os = require("os");
+    nw.clipboard=nw.gui.Clipboard.get();
+</script>
 </html>
