@@ -1,0 +1,45 @@
+<style>
+    li .panel-body {
+        padding: 10px 0 0 0;
+
+    }
+
+    li .panel-body .panel-body {
+        padding: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    a {
+        cursor: pointer;
+    }
+</style>
+<div class="page-header">
+    <h1><span class="text-light-gray">团购 / </span>团购地址生成</h1>
+</div>
+<div class="panel colourable">
+
+    <div class="panel-body">
+        <div class="row form-group">
+            <label class="col-sm-2 control-label">淘宝地址:</label>
+
+            <div class="col-sm-10">
+               <div class="col-sm-12"> <input type="text" ng-model="sourceUrl" class="form-control"></div>
+            </div>
+        </div>
+        <div class="row form-group">
+            <label class="col-sm-2 control-label"></label>
+
+            <div class="col-sm-10">
+                <div class="col-sm-10"><input type="text" ng-model="url" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" ng-click="copy()">复制</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer text-right">
+        <button class="btn btn-primary" ng-click="create()">生成</button>
+    </div>
+</div>

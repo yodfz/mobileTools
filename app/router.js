@@ -41,6 +41,16 @@ function uiRoutes($stateProvider, $urlRouterProvider) {
                     controller:'mdscjgroupDataCtrl'
                 }
             }
+        })
+        .state('createUrl', {
+            url: '/createUrl',
+
+            views: {
+                "content": {
+                    templateUrl: './app/views/createUrl.html',
+                    controller:'createUrlCtrl'
+                }
+            }
         });
 
 

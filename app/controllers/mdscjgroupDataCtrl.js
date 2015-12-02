@@ -32,8 +32,32 @@ sysAdminAppControllers.controller(
                     oldPrice: "",
                     tag: "",
                     url: "",
-                    imgUrl: ""
+                    imgUrl: "",
+                    vm:{
+                        isShow:true
+                    }
                 });
+            };
+
+
+            $scope.up=function($idx){
+                if($idx==0){
+                    UI.message.alertDanger("第一个不能上移");
+                    return;
+                }
+                var $item=vm.data[$idx-1];
+                vm.data[$idx-1]=vm.data[$idx];
+                vm.data[$idx]=$item;
+            };
+
+            $scope.down=function($idx){
+                if($idx==vm.data.length-1){
+                    UI.message.alertDanger("最后一个不能下移");
+                    return;
+                }
+                var $item=vm.data[$idx+1];
+                vm.data[$idx+1]=vm.data[$idx];
+                vm.data[$idx]=$item;
             };
 
             /**

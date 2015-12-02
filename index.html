@@ -58,6 +58,11 @@
                                 <!--<i class="menu-icon fa fa-user"></i>-->
                                 <span class="mm-text">团购商品编辑</span></a>
                         </li>
+                        <li>
+                            <a tabindex="-1" ui-sref="createUrl">
+                                <!--<i class="menu-icon fa fa-user"></i>-->
+                                <span class="mm-text">团购URL生成</span></a>
+                        </li>
                     </ul>
                 </li>
 
@@ -141,6 +146,7 @@
 <script src="app/controllers/homeCtrl.js"></script>
 <script src="app/controllers/mdscjgroupDataCtrl.js"></script>
 <script src="app/controllers/mdscjarticleForNavCtrl.js"></script>
+<script src="app/controllers/createUrlCtrl.js"></script>
 
 
 <script>
@@ -151,5 +157,6 @@
 //    nw.osenv = require("osenv");
     nw.os = require("os");
     nw.clipboard=nw.gui.Clipboard.get();
+
 </script>
 </html>

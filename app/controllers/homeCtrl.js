@@ -50,4 +50,13 @@ sysAdminAppControllers.controller(
                 //}
 
             });
+
+            win = nw.gui.Window.get();
+            var nativeMenuBar = new nw.gui.Menu({ type: "menubar" });
+            try {
+                nativeMenuBar.createMacBuiltin("My App");
+                win.menu = nativeMenuBar;
+            } catch (ex) {
+                console.log(ex.message);
+            }
         }]);

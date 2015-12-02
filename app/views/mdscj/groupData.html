@@ -7,6 +7,9 @@
         padding:0px;
         border-bottom:1px solid #ccc;
     }
+    a{
+        cursor: pointer;
+    }
 </style>
 <div class="page-header">
     <h1><span class="text-light-gray">团购 / </span>团购H5</h1>
@@ -38,73 +41,80 @@
                 <div class="panel-body">
                     <div class="row form-group">
                         <label class="col-sm-4 control-label">类型:</label>
-                        <div class="col-sm-8">
+                        <div class="col-sm-4">
                             {{item.type==0?'店标':item.type==1?'Banner':item.type==2?'商品':item.type==3?'去店铺':''}}
                         </div>
-                    </div>
-                    <div ng-if="item.type==0" class="panel-body">
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">标题:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.title" class="form-control">
-                            </div>
+                        <div class="col-sm-4 text-right">
+                            <a ng-click="item.vm.isShow=!item.vm.isShow">显示/隐藏</a>
+                            <a ng-click="up($index)">上移</a>
+                            <a ng-click="down($index)">下移</a>
                         </div>
                     </div>
-
-                    <div ng-if="item.type==1" class="panel-body">
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">图片地址:(如 images/xxxxx.jpg)</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.imgUrl" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">链接url:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.url" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div ng-if="item.type==2" class="panel-body">
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">标题:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.title" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">图片地址:(如 images/xxxxx.jpg)</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.imgUrl" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">淘宝价:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.oldPrice" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">团购价:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.price" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">链接url:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.url" class="form-control">
+                    <div ng-if="item.vm.isShow">
+                        <div ng-if="item.type==0" class="panel-body">
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">标题:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.title" class="form-control">
+                                </div>
                             </div>
                         </div>
 
-                    </div>
+                        <div ng-if="item.type==1" class="panel-body">
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">图片地址:(如 images/xxxxx.jpg)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.imgUrl" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">链接url:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.url" class="form-control">
+                                </div>
+                            </div>
+                        </div>
 
-                    <div ng-if="item.type==3" class="panel-body">
-                        <div class="row form-group">
-                            <label class="col-sm-4 control-label">店铺url:</label>
-                            <div class="col-sm-8">
-                                <input type="text" ng-model="item.url" class="form-control">
+                        <div ng-if="item.type==2" class="panel-body">
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">标题:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.title" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">图片地址:(如 images/xxxxx.jpg)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.imgUrl" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">淘宝价:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.oldPrice" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">团购价:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.price" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">链接url:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.url" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div ng-if="item.type==3" class="panel-body">
+                            <div class="row form-group">
+                                <label class="col-sm-4 control-label">店铺url:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" ng-model="item.url" class="form-control">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +136,7 @@
         <p>
             <span style="color:#06e">"追加数据"</span>将在现有数据之后追加新的数据
         </p>
-        <textarea name="" class="form-control" id="vmdata" cols="30" rows="10">{{vm.data}}</textarea>
+        <textarea class="form-control" id="vmdata" cols="30" rows="10">{{vm.data}}</textarea>
 
     </div>
 </div>
